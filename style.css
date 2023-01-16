@@ -1,8 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron&display=swap');
+
 :root {
   --dark-color: #212121;
 }
 
 body {
+  background: #d9e2f5;
   font-family: system-ui;
   text-align: center;
   margin-top: 40px;
@@ -35,6 +38,8 @@ main * {
 }
 
 input {
+  color: blueviolet;
+  height: 1.5rem;
   text-align: center;
   font-size: large;
   outline: none;
@@ -87,4 +92,19 @@ a {
     transition: background-color 5000s ease-in-out 0s;
     -webkit-text-fill-color: #fff !important;
   }
+}
+
+header::before{
+  background: url('./bg.jpg') center center/cover no-repeat;
+  content: "";
+  position: absolute;
+  top:0px;
+  left: 0px;
+  min-height: 100vh;
+  width: 100%;
+  z-index: -1;
+  opacity: 0.2;
+}
+header h4{
+  font-family: 'Orbitron', sans-serif;
 }
